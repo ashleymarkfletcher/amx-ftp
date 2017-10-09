@@ -1,0 +1,28 @@
+{
+  "name": "amx-ftp",
+  "version": "1.0.0",
+  "description": "Send and retrieve files over FTP from AMX Netlinx processor",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ashleymarkfletcher/amx-ftp.git"
+  },
+  "keywords": [
+    "AMX",
+    "Harman",
+    "FTP",
+    "Netlinx"
+  ],
+  "author": "Ashley Fletcher <ashleymarkfletcher@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "ftp": "^0.3.10"
+  },
+  "bugs": {
+    "url": "https://github.com/ashleymarkfletcher/amx-ftp/issues"
+  },
+  "homepage": "https://github.com/ashleymarkfletcher/amx-ftp#readme"
+}
