@@ -4,7 +4,7 @@ Send and retrieve files over FTP from an AMX Netlinx processor
 ## Installation
 
 ```bash
-$ npm install amx-ftp
+$ npm install amx-ftp --save
 ```
 
 ## Features
