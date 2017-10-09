@@ -13,6 +13,7 @@ $ npm install amx-ftp --save
   * Send files to an AMX processor
 
 ## Example Usage Node.js
+
 Get all the files from the processor
 ```js
 const amxFtp = require('amx-ftp')
@@ -40,6 +41,7 @@ sendFile({ host: '192.168.20.20', fileName: 'test.txt'})
 ```
 
 ## Defaults
+
 Both getFiles and sendFile have default parameters than can be overridden
 ```js
 {
@@ -52,9 +54,11 @@ Both getFiles and sendFile have default parameters than can be overridden
 ```
 
 ## ToDo
+
   * Add methods for just retrieving a list of files.
   * Add method to pull individual file
   * Add CLI support
 
 ## Devices Tested
+
 So far this has only been test with NX processors but should work with any Netlinx Processor
