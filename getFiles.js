@@ -48,11 +48,9 @@ function getFiles(instanceOptions) {
             c.end()
             reject(err)
           })
-
         })
       })
-    })
-    .catch((err) => reject(err))
+    }).catch((err) => reject(err))
   })
 }
 
