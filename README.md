@@ -31,7 +31,7 @@ Send a file to a processor
 ```js
 const amxFtp = require('amx-ftp')
 
-sendFile({ host: '192.168.20.20', fileName: 'test.txt'})
+amxFtp.sendFile({ host: '192.168.20.20', fileName: 'test.txt'})
 .then(() => {
   console.log('file sent!')
 })
