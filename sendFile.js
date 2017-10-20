@@ -12,7 +12,8 @@ function sendFile(instanceOptions) {
     }
 
     // combine defaults and instance options
-    const options = { ...defaultOptions, ...instanceOptions }
+    // const options = { ...defaultOptions, ...instanceOptions }
+    const options = Object.assign({}, defaultOptions, instanceOptions)
 
     // create new ftp client
     const c = new Client()
