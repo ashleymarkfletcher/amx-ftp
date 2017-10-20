@@ -30,7 +30,7 @@ function sendFile(instanceOptions) {
     c.on('ready', () => {
 
       // get list of files
-      c.put(options.fileName, options.fileName, (err) => {
+      c.put(options.fileName, options.remotePath || options.fileName, (err) => {
         if (err) return reject(err)
         // console.dir(list)
         c.end()
