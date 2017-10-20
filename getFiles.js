@@ -15,7 +15,8 @@ function getFiles(instanceOptions) {
     }
 
     // combine defaults and instance options
-    const options = { ...defaultOptions, ...instanceOptions }
+    // const options = { ...defaultOptions, ...instanceOptions }
+    const options = Object.assign({}, defaultOptions, instanceOptions)
 
     return initDirectory(options.path).then(() => {
       // create new ftp client
