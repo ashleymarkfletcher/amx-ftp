@@ -1,3 +1,5 @@
+const fs = require('fs')
+
 // gets a file and saves it to a local directory/file
 function ftpGetAndSave(client, path, filename) {
   return new Promise((resolve, reject) => {

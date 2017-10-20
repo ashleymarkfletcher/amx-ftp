@@ -24,5 +24,8 @@
   "bugs": {
     "url": "https://github.com/ashleymarkfletcher/amx-ftp/issues"
   },
-  "homepage": "https://github.com/ashleymarkfletcher/amx-ftp#readme"
+  "homepage": "https://github.com/ashleymarkfletcher/amx-ftp#readme",
+  "devDependencies": {
+    "jest": "^21.2.1"
+  }
 }
