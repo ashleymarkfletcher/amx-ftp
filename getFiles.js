@@ -1,10 +1,10 @@
 const Client = require('ftp')
 const fs = require('fs')
 const initDirectory = require('./initDirectory')
-const ftpGetAndSave = require('./ftpGetAndSave');
+const getAllAndSave = require('./getAllAndSave');
 
-function getFiles(instanceOptions) {
-  return new Promise((resolve, reject) => {
+async function getFiles(instanceOptions) {
+  return new Promise(async (resolve, reject) => {
 
     const defaultOptions = {
       host: '127.0.0.1',
@@ -18,42 +18,27 @@ function getFiles(instanceOptions) {
     // const options = { ...defaultOptions, ...instanceOptions }
     const options = Object.assign({}, defaultOptions, instanceOptions)
 
-    return initDirectory(options.path).then(() => {
-      // create new ftp client
-      const c = new Client()
+    // create directory to save files if it doesn't exist
+    await initDirectory(options.path).catch((err) => reject(err))
 
-      // connnect with config for client
-      c.connect({
-        host: options.host,
-        port: options.port,
-        user: options.user,
-        password: options.password
-      })
+    // create new ftp client
+    const c = new Client()
 
-      // once connection is open
-      c.on('ready', () => {
+    // connnect with config for client
+    c.connect({
+      host: options.host,
+      port: options.port,
+      user: options.user,
+      password: options.password
+    })
 
-        // get list of files
-        c.list((err, list) => {
-          if (err) return reject(err)
-          // console.dir(list)
-
-          // remove all files that aren't txt and then map all promises to get a file
-          const files = list.filter((file) => file.name.substr(file.name.length-3) == 'txt')
-          .map((file) => ftpGetAndSave(c, options.path, file.name))
-
-          // trigger all files to get and wait until done
-          Promise.all(files).then(() => {
-            c.end()
-            resolve()
-          }).catch((err) => {
-            c.end()
-            reject(err)
-          })
-        })
-      })
-    }).catch((err) => reject(err))
+    // once connection is open
+    c.on('ready', async () => {
+      getAllAndSave(c, options.path)
+      .catch((err) => reject(err))
+    })
   })
 }
+
 
 module.exports = getFiles
