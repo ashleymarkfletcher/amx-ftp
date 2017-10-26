@@ -1,6 +1,8 @@
 # amx-ftp
 Send and retrieve files over FTP from an AMX Netlinx processor
 
+[![Build status](https://ci.appveyor.com/api/projects/status/56df4tesf9ojrt6r?svg=true)](https://ci.appveyor.com/project/ashleymarkfletcher/amx-ftp)
+
 ## Installation
 
 ```bash
