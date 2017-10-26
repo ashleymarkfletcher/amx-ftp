@@ -1,6 +1,6 @@
 {
   "name": "amx-ftp",
-  "version": "2.0.5",
+  "version": "2.0.6",
   "description": "Send and retrieve files over FTP from AMX Netlinx processor",
   "main": "index.js",
   "engines": {
@@ -14,7 +14,11 @@
   },
   "jest": {
     "collectCoverage": true,
-    "collectCoverageFrom" : ["**/*.{js}", "!**/node_modules/**", "!**/vendor/**"]
+    "collectCoverageFrom": [
+      "**/*.{js}",
+      "!**/node_modules/**",
+      "!**/vendor/**"
+    ]
   },
   "repository": {
     "type": "git",
