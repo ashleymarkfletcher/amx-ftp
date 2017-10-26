@@ -1,7 +1,7 @@
 const Client = require('ftp')
 const fs = require('fs')
 const initDirectory = require('./initDirectory')
-const getAllAndSave = require('./getAllAndSave');
+const getAllAndSave = require('./getAllAndSave')
 
 async function getFiles(instanceOptions) {
   return new Promise(async (resolve, reject) => {
