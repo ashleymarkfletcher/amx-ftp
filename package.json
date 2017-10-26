@@ -29,7 +29,8 @@
   "author": "Ashley Fletcher <ashleymarkfletcher@gmail.com>",
   "license": "ISC",
   "dependencies": {
-    "ftp": "^0.3.10"
+    "ftp": "^0.3.10",
+    "codecov": "^3.0.0"
   },
   "bugs": {
     "url": "https://github.com/ashleymarkfletcher/amx-ftp/issues"
