@@ -7,6 +7,10 @@ Send and retrieve files over FTP from an AMX Netlinx processor
 $ npm install amx-ftp --save
 ```
 
+## Requirements
+
+  As of version 2.0, it is recommended to use node version 8 or higher due to the use of async/await.
+
 ## Features
 
   * Get all txt files from an AMX processor
