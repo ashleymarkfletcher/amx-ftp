@@ -1,6 +1,6 @@
 {
   "name": "amx-ftp",
-  "version": "2.0.3",
+  "version": "2.0.4",
   "description": "Send and retrieve files over FTP from AMX Netlinx processor",
   "main": "index.js",
   "engines": {
