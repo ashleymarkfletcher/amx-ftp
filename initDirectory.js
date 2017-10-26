@@ -11,7 +11,6 @@ function initDirectory (path) {
     if (exists) return resolve()
 
     return makeDirectory(path)
-
   })
 }
 
