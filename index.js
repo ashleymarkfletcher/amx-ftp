@@ -1,13 +1,13 @@
 const getFiles = require('./getFiles')
 const sendFile = require('./sendFile')
 
-getFiles({ host: '192.168.20.20' })
-.then(() => {
-  console.log('files retrieved!')
-})
-.catch((err) => {
-  console.log('oh no! ', err)
-})
+// getFiles({ host: '192.168.20.20' })
+// .then(() => {
+//   console.log('files retrieved!')
+// })
+// .catch((err) => {
+//   console.log('oh no! ', err)
+// })
 
 // sendFile({ host: '192.168.20.20', fileName: 'test.txt'})
 // .then(() => {
