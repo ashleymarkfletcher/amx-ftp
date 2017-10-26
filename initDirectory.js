@@ -3,15 +3,15 @@ const pathExists = require('./pathExists')
 const makeDirectory = require('./makeDirectory');
 
 // create directory if it doesn't exist
-function initDirectory (path) {
-  return new Promise( async () => {
+async function initDirectory (path) {
+
 
     const exists = await pathExists(path)
 
     if (exists) return Promise.resolve()
 
     return makeDirectory(path)
-  })
+
 }
 
 
