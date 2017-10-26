@@ -12,6 +12,10 @@
   "scripts": {
     "test": "jest"
   },
+  "jest": {
+    "collectCoverage": true,
+    "collectCoverageFrom" : ["**/*.{js}", "!**/node_modules/**", "!**/vendor/**"]
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ashleymarkfletcher/amx-ftp.git"
