@@ -14,7 +14,11 @@
   },
   "jest": {
     "collectCoverage": true,
-    "collectCoverageFrom" : ["**/*.{js}", "!**/node_modules/**", "!**/vendor/**"]
+    "collectCoverageFrom": [
+      "**/*.{js}",
+      "!**/node_modules/**",
+      "!**/vendor/**"
+    ]
   },
   "repository": {
     "type": "git",
