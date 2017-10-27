@@ -19,7 +19,8 @@
       "!**/node_modules/**",
       "!**/coverage/**",
       "!**/vendor/**",
-      "!index.js"
+      "!index.js",
+      "!example.js"
     ]
   },
   "repository": {
