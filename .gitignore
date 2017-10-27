@@ -2,3 +2,5 @@ node_modules
 ftpFiles
 coverage
 testFolder
+test.txt
+testExport.txt
