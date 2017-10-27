@@ -3,7 +3,6 @@ const getFileList = require('./getFileList');
 const filterTXTFiles = require('./filterTXTFiles');
 const fileListToPromiseArray = require('./fileListToPromiseArray');
 
-
 // download all the files and save to path
 async function getAllAndSave(client, path) {
 
