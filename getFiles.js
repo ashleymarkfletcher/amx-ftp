@@ -3,7 +3,7 @@ const fs = require('fs')
 const initDirectory = require('./initDirectory')
 const getAllAndSave = require('./getAllAndSave')
 
-async function getFiles(instanceOptions) {
+function getFiles(instanceOptions) {
   return new Promise(async (resolve, reject) => {
 
     const defaultOptions = {
@@ -35,6 +35,7 @@ async function getFiles(instanceOptions) {
     // once connection is open
     c.on('ready', async () => {
       getAllAndSave(c, options.path)
+      .then(() => resolve())
       .catch((err) => reject(err))
     })
   })
