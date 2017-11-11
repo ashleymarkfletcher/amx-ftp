@@ -1,4 +1,4 @@
-const filterTXTFiles = require('../filterTXTFiles');
+const filterTXTFiles = require('../src/filterTXTFiles');
 
 const mockFiles = [
   {

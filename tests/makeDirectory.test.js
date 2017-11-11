@@ -1,4 +1,4 @@
-const makeDirectory = require('../makeDirectory');
+const makeDirectory = require('../src/makeDirectory');
 const dirName = 'testFolder'
 
 test('checks folder exists, makes new folder and resolves', () => {

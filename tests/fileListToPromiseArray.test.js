@@ -1,4 +1,4 @@
-const fileListToPromiseArray = require('../fileListToPromiseArray');
+const fileListToPromiseArray = require('../src/fileListToPromiseArray');
 
 const fileList = [
   { name: 'test1' },

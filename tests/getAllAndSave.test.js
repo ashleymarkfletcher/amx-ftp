@@ -1,4 +1,4 @@
-const getAllAndSave = require('../getAllAndSave')
+const getAllAndSave = require('../src/getAllAndSave')
 
 const mockClient = {
   list: function(cb) {

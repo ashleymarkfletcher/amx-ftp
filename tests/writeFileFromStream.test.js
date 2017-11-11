@@ -1,4 +1,4 @@
-const writeFileFromStream = require('../writeFileFromStream');
+const writeFileFromStream = require('../src/writeFileFromStream');
 
 var fs = require('fs');
 var Stream = require('stream');

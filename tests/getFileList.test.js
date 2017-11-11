@@ -1,4 +1,4 @@
-const getFileList = require('../getFileList');
+const getFileList = require('../src/getFileList');
 
 const mockClient = {
   list: function(cb) {

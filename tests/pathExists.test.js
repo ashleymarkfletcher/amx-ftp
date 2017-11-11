@@ -1,4 +1,4 @@
-const pathExists = require('../pathExists')
+const pathExists = require('../src/pathExists')
 const path = 'doesntexist'
 
 test('return boolean of if a folder exists', () => {

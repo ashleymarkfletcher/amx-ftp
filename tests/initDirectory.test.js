@@ -1,4 +1,4 @@
-const initDirectory = require('../initDirectory')
+const initDirectory = require('../src/initDirectory')
 const dirName = 'ftpFiles'
 
 test('creates new folder and resolves', () => {

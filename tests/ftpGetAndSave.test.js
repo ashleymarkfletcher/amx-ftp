@@ -1,6 +1,6 @@
-const ftpGetAndSave = require('../ftpGetAndSave');
+const ftpGetAndSave = require('../src/ftpGetAndSave');
 
-jest.mock('../writeFileFromStream', () => {
+jest.mock('../src/writeFileFromStream', () => {
   return jest.fn(() => Promise.resolve())
 })
 
