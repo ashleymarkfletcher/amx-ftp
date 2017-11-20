@@ -1,5 +1,5 @@
 const ftpd = require('ftpd');
-const getFiles = require('../src/getFiles')
+const sendFile = require('../src/sendFile')
 const options = {
   host: process.env.IP || '127.0.0.1',
   port: process.env.PORT || 21,
@@ -51,5 +51,5 @@ server.listen(options.port)
 
 test('getFiles gets a list of files and saves to local directory then resolves', () => {
   expect.assertions(1)
-  return expect(getFiles().then(() => {server.close()})).resolves.toEqual();
+  return expect(sendFile({fileName:'tests/testData.txt', remotePath:'testSend.txt'}).then(() => {server.close()})).resolves.toEqual();
 })
