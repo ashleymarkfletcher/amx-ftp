@@ -1,6 +1,8 @@
 # amx-ftp
 Send and retrieve files over FTP from an AMX Netlinx processor
 
+[![NPM](https://nodei.co/npm/amx-ftp.png?downloads=true)](https://nodei.co/npm/amx-ftp/)
+
 [![Build status](https://ci.appveyor.com/api/projects/status/56df4tesf9ojrt6r?svg=true)](https://ci.appveyor.com/project/ashleymarkfletcher/amx-ftp)
 [![codecov](https://codecov.io/gh/ashleymarkfletcher/amx-ftp/branch/master/graph/badge.svg)](https://codecov.io/gh/ashleymarkfletcher/amx-ftp)
 ## Installation
